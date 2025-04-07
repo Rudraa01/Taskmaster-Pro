@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro | Advanced Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TaskMaster Pro</h1>
+            <div class="theme-switcher">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="todo-input-section">
+            <form id="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="What's on your mind?" required>
+                    <input type="date" id="due-date">
+                    <select id="priority">
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button type="submit" class="add-btn">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="sort-group">
+                <button class="sort-btn" data-sort="date">
+                    <i class="fas fa-calendar"></i> Sort by Date
+                </button>
+                <button class="sort-btn" data-sort="priority">
+                    <i class="fas fa-flag"></i> Sort by Priority
+                </button>
+            </div>
+        </div>
+
+        <div class="todo-list" id="todo-list">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+
+        <div class="list-footer">
+            <div class="todo-stats">
+                <span id="tasks-counter">0 tasks remaining</span>
+                <span id="completed-counter">0 completed</span>
+            </div>
+            <button class="clear-btn" id="clear-completed">
+                Clear Completed
+            </button>
+        </div>
+    </div>
+
+    <div class="social-section">
+        <div class="social-links">
+            <a href="https://github.com/Rudraa01" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/rudra-vishwakarma-80b7a0269" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/_rudra.aaaaa?igsh=b3dvdmFhNjA5ZzI0" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+            <a href="https://x.com/Rudracavin?t=1XoePwe1yJAjJa1Mc6fwEw&s=09" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <div class="watermark">Created by Rudra Vishwakarma</div>
+
+    <footer class="footer">
+        <p>&copy; 2025 TaskMaster Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
